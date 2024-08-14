@@ -1,8 +1,10 @@
 window.onload = function(){
-  let monthsLeft = document.getElementById("months-left");
-  console.log(monthsLeft);
+  let monthsLeftDiv = document.getElementById("months-left");
   
   let today = new Date();
   let endDate = new Date('September 14, 2026');
-  console.log(endDate);
+  let msRemaining = (endDate - today);
+
+  let monthsRemaining = ((12 * msRemaining) / (1000*60*60*24*365));
+  console.log(monthsRemaining);
 }
