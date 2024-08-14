@@ -6,5 +6,9 @@ window.onload = function(){
   let msRemaining = (endDate - today);
 
   let monthsRemaining = ((12 * msRemaining) / (1000*60*60*24*365));
-  console.log(monthsRemaining);
+  let wholeMonths = Math.floor(Math.abs(monthsRemaining))
+  monthsLeftDiv.textContent = wholeMonths;
+
+  let decimalMonths = Math.abs(monthsRemaining) - wholeMonths;
+  console.log(decimalMonths);
 }
