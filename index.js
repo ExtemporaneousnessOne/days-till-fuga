@@ -1,5 +1,5 @@
-let daysLeft = document.getElementById('days-left');
-console.log(daysLeft);
+let monthsLeft = document.getElementById("months-left");
+console.log(monthsLeft);
 
 let today = new Date();
 let endDate = new Date('September 14, 2026');
