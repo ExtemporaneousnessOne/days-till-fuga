@@ -1,4 +1,4 @@
-window.onload = function(){
+function setClockDigits(){
   let monthsLeftDiv = document.getElementById("months-left");
   let weeksLeftDiv = document.getElementById("weeks-left");
   let daysLeftDiv = document.getElementById("days-left");
@@ -53,4 +53,10 @@ window.onload = function(){
   let wholeSeconds = Math.floor(Math.abs(secondsRemaining));//non decimal portion of seconds
   secondsLeftDiv.textContent = wholeSeconds.toString().padStart(2, '0');
   console.log(wholeSeconds.toString() + " - wholeSeconds");
+}
+
+
+
+window.onload = function(){
+  window.setInterval(setClockDigits, 1000);
 }
