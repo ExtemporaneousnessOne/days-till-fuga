@@ -1,3 +1,8 @@
+body {
+  background: black;
+  color:  #c8b9b9;
+}
+
 .clock {
   display: flex;
   flex-direction: row;
