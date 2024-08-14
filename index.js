@@ -19,38 +19,38 @@ window.onload = function(){
   //365 days -> 1 year
 
   let monthsRemaining = ((12 * msRemaining) / (1000*60*60*24*365));
-  console.log(monthsRemaining);
+  console.log(monthsRemaining.toString() + " - monthsRemaining");
   let wholeMonths = Math.floor(Math.abs(monthsRemaining));
   monthsLeftDiv.textContent = wholeMonths;
-  console.log(wholeMonths);
+  console.log(wholeMonths.toString() + " - wholeMonths");
 
   let weeksRemaining = ((monthsRemaining - Math.floor(Math.abs(monthsRemaining))) / (1000 * 60 * 60 * 24 * 7));
-  console.log(weeksRemaining);
+  console.log(weeksRemaining.toString() + " - weeksRemaining");
   let wholeWeeks = Math.floor(Math.abs(weeksRemaining));
   weeksLeftDiv.textContent = wholeWeeks;
-  console.log(wholeWeeks);
+  console.log(wholeWeeks.toString() + " - wholeWeeks");
 
   let daysRemaining = ((weeksRemaining - Math.floor(Math.abs(weeksRemaining)) ) / (1000 * 60 * 60 * 24));
-  console.log(daysRemaining);
+  console.log(daysRemaining.toString() + " - daysRemaining");
   let wholeDays = Math.floor(Math.abs(daysRemaining));
   daysLeftDiv.textContent = wholeDays;
-  console.log(wholeDays);
+  console.log(wholeDays.toString() + " - wholeDays");
 
   let hoursRemaining = ((daysRemaining - Math.floor(Math.abs(daysRemaining))) / (1000 * 60 * 60));
-  console.log(hoursRemaining);
+  console.log(hoursRemaining.toString() + " - hoursRemaining");
   let wholeHours = Math.floor(Math.abs(hoursRemaining));
   hoursLeftDiv.textContent = wholeHours;
-  console.log(wholeHours);
+  console.log(wholeHours.toString() + " - wholeHours");
 
   let minutesRemaining = ((hoursRemaining - Math.floor(Math.abs(hoursRemaining))) / (1000 * 60));
-  console.log(minutesRemaining);
+  console.log(minutesRemaining.toString() + " - minutesRemaining");
   let wholeMinutes = Math.floor(Math.abs(minutesRemaining));
   minutesLeftDiv.textContent = wholeMinutes;
-  console.log(wholeMinutes);
+  console.log(wholeMinutes.toString() + " - wholeMinutes");
 
   let secondsRemaining = ((minutesRemaining - Math.floor(Math.abs(minutesRemaining))) / (1000));
-  console.log(secondsRemaining);
+  console.log(secondsRemaining.toString() + " - secondsRemaining");
   let wholeSeconds = Math.floor(Math.abs(secondsRemaining));
   secondsLeftDiv.textContent = wholeSeconds;
-  console.log(wholeSeconds);
+  console.log(wholeSeconds.toString() + " - wholeSeconds");
 }
