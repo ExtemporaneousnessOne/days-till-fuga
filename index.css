@@ -1,6 +1,7 @@
 body {
   background: black;
   color:  #c8b9b9;
+  overflow: hidden;
 }
 
 .clock {
@@ -34,4 +35,10 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  font-size: 4vw;
+}
+
+.days-till-fuga {
+  position: absolute;
+  bottom: 0;
 }
