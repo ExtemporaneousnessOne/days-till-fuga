@@ -18,8 +18,8 @@ body {
 }
 
 .colon {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .clockplusdesc {
@@ -35,7 +35,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 .days-till-fuga {
