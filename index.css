@@ -16,3 +16,10 @@ body {
   justify-content: center;
   height: 100vh;
 }
+
+.orbitron-400 {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
