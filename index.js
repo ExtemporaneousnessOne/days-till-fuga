@@ -24,7 +24,7 @@ window.onload = function(){
   monthsLeftDiv.textContent = wholeMonths;  
   console.log(wholeMonths.toString() + " - wholeMonths");
 
-  let weeksRemaining = ((monthsRemaining - Math.floor(Math.abs(monthsRemaining))) * 365) / (12 * 7)); //in month -> week
+  let weeksRemaining = (((monthsRemaining - Math.floor(Math.abs(monthsRemaining))) * 365) / (12 * 7)); //in month -> week
   console.log(weeksRemaining.toString() + " - weeksRemaining");
   let wholeWeeks = Math.floor(Math.abs(weeksRemaining)); //non decimal portion of weeks
   weeksLeftDiv.textContent = wholeWeeks;
