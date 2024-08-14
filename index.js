@@ -3,6 +3,7 @@ window.onload = function(){
   let weeksLeftDiv = document.getElementById("weeks-left");
   let daysLeftDiv = document.getElementById("days-left");
   let hoursLeftDiv = document.getElementById("hours-left");
+  let minutesLeftDiv = document.getElementById("minutes-left");
   let secondsLeftDiv = document.getElementById("seconds-left");
   
   let today = new Date();
